@@ -1,0 +1,64 @@
+
+----------------------------------------2023/2/9 16:3:44-----------------------------------------
+
+Polygon file: NA0.txt
+Number of polygon vertice: 2927
+Test point file: NA_query.csv
+Number of test points: 1000000
+Depth of AHHG: 5
+Time of preprocessing: 0.042820 second (creat AHHG: 0.026710 second, classify AHHG: 0.016110 second)
+Storage overhead of AHHG on CPU: 932
+Storage overhead of AHHG on GPU: 292 KB
+Total time of test all points: 0.267032 second
+Average time of test a point: 2.67032e-07 second
+Test result: inside 433325, outside 566675
+
+---------------------------------------------------------------------------------------------------
+
+----------------------------------------2023/2/9 16:5:29-----------------------------------------
+
+Polygon file: NA0.txt
+Number of polygon vertice: 2927
+Test point file: NA_query.csv
+Number of test points: 1000000
+Depth of AHHG: 5
+Time of preprocessing: 0.009972 second (creat AHHG: 0.008214 second, classify AHHG: 0.001758 second)
+Storage overhead of AHHG on CPU: 932
+Storage overhead of AHHG on GPU: 292 KB
+Total time of test all points: 0.024944 second
+Average time of test a point: 2.49436e-08 second
+Test result: inside 433325, outside 566675
+
+---------------------------------------------------------------------------------------------------
+
+----------------------------------------2023/2/9 16:27:38-----------------------------------------
+
+Polygon file: NA0.txt
+Number of polygon vertice: 2927
+Test point file: NA_query.csv
+Number of test points: 1000000
+Depth of AHHG: 5
+Time of preprocessing: 0.011936 second (creat AHHG: 0.010049 second, classify AHHG: 0.001887 second)
+Storage overhead of AHHG on CPU: 932
+Storage overhead of AHHG on GPU: 292 KB
+Total time of test all points: 0.024992 second
+Average time of test a point: 2.49917e-08 second
+Test result: inside 433325, outside 566675
+
+---------------------------------------------------------------------------------------------------
+
+----------------------------------------2023/2/9 16:43:22-----------------------------------------
+
+Polygon file: NA0.txt
+Number of polygon vertice: 2927
+Test point file: NA_query.csv
+Number of test points: 1000000
+Depth of AHHG: 5
+Time of preprocessing: 0.008712 second (creat AHHG: 0.007001 second, classify AHHG: 0.001711 second)
+Storage overhead of AHHG on CPU: 932
+Storage overhead of AHHG on GPU: 292 KB
+Total time of test all points: 0.024921 second
+Average time of test a point: 2.49208e-08 second
+Test result: inside 433325, outside 566675
+
+---------------------------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GPISP", "GPISP.vcxproj", "{3133EA16-398D-48EC-9C5B-5C037D95FA6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3133EA16-398D-48EC-9C5B-5C037D95FA6B}.Debug|x64.ActiveCfg = Debug|x64
+		{3133EA16-398D-48EC-9C5B-5C037D95FA6B}.Debug|x64.Build.0 = Debug|x64
+		{3133EA16-398D-48EC-9C5B-5C037D95FA6B}.Release|x64.ActiveCfg = Release|x64
+		{3133EA16-398D-48EC-9C5B-5C037D95FA6B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDC3C8E5-35F8-4694-95F2-32BC3226503B}
+	EndGlobalSection
+EndGlobal
