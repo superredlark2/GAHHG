@@ -2,7 +2,8 @@
 
 ## Introduction
 
-This repository includes executable programs and data for related algorithms in the paper "Hexagon-based Adaptive Hierarchies for Efficient Point-in-Spherical-Polygon Tests on GPUs". When the software and hardware environment meet requirements, you can run the bat file to verify the data in the article. The main bat files include testAHHG.bat and testGAHHG.bat, which are used to test the AHHG and the GAHHG method in the paper, respectively. Implementations of the other three comparison algorithms (GMAT, Lune(no prep), and Lune(prep)) are not included in this repository. They are provided by [1] and the programs are at the link https://github.com/ryanketzner/sphericalpolygon.
+This repository contains the souce code, executable files and data for the article "Hexagon-based Adaptive Hierarchies for Efficient Point-in-Spherical-Polygon Tests on GPUs". When the software and hardware conditions are met, readers can verify the data in the article by compiling source code or directly running bat files. The main bat file is testGAHHG.bat, which is used to test the GAHHG algorithm in this article. The performance of the comparison algorithm AHHG in the paper can be tested by running testAHHG.bat. For the other three comparison algorithms (GMAT, Lune(no prep), and Lune(prep)), they are provided by [1] and the relating data and programs are at the link https://github.com/ryanketzner/sphericalpolygon. For easy comparison, this repository includes some polygon files and query point files stored in the format they use.
+
 
 ## Directory
 ```
@@ -35,7 +36,7 @@ To build the project, it requires the Windows 10 operating system, Visual Studio
 
 ## Reproduce the result in the paper
 
-To reproduce the result, it requires the Windows 10 operating system and a graphics card that supports CUDA 11 or higher. Run testAHHG.bat file in the test directory to get the test result of the AHHG method. Performance statistics (including  preprocessing time, query time and space overhead, etc.) are recorded in the report.txt file. Similarly, run the testGAHHG.bat file in the test directory to get the test results of the GAHHG method. Before starting the GAHHG test, it checks to see if there is a GPU available. If not, the test is exited.
+To reproduce the result, it requires the Windows 10 operating system and a graphics card that supports CUDA 11 or higher. Run testGAHHG.bat file in the test directory to get the test result of the GAHHG method. Performance statistics (including  preprocessing time, query time and space overhead, etc.) are recorded in the report.txt file. Similarly, run the testAHHG.bat file in the test directory to get the test results of the AHHG method. Before starting the GAHHG test, it checks to see if there is a GPU available. If not, the test exits.
 
 ## Polygon file format
 
@@ -43,7 +44,7 @@ The custom polygon file format is as follows.
 
 POLYGON 1 [number of inner rings of the polygon]
 
-0 [number of vertices of the outer ring]
+0 [number of vertices of the outer ring + 1]
 
 [longitude] [latitude]
 
@@ -51,7 +52,7 @@ POLYGON 1 [number of inner rings of the polygon]
 
 [longitude] [latitude]
 
-[index of the inner ring] [number of vertices of the inner ring]
+[index of the inner ring] [number of vertices of the inner ring + 1]
 
 [longitude] [latitude]
 
@@ -59,13 +60,13 @@ POLYGON 1 [number of inner rings of the polygon]
 
 [longitude] [latitude]
 
-[index of the inner ring] [number of vertices of the inner ring]
+[index of the inner ring] [number of vertices of the inner ring + 1]
 
 [longitude] [latitude]
 
 ......
 
-The value of longitude is [-180,180], and the value of latitude is [-90,90]. If a ring has n vertices, n+1 vertices are included in the file, where the first vertex is the same as the n+1 vertex. Here is an example file of a spherical triangle with an inner ring.
+The longitude range is -180° ~ 180° and the latitude range is -90° ~ 90°. If a ring has n vertices, n+1 vertices are included in the file, where the first vertex is the same as the (n+1)th vertex. Below is an example file of a spherical triangle with an inner ring.
 
 POLYGON 1 1
 
